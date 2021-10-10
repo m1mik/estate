@@ -25,12 +25,6 @@ const cube = new THREE.Mesh(
     color: 0x00ffff,
   })
 );
-const plane = new THREE.Mesh(
-  new THREE.PlaneGeometry(10, 10, 10),
-  new THREE.MeshBasicMaterial({ color: 0x229922 })
-);
-plane.rotateX(-0.9);
-scene.add(plane);
 scene.add(cube);
 cube.castShadow = true;
 
